@@ -1,0 +1,13 @@
+{
+  "name": "gad-small-app",
+  "version": "1.0.0",
+  "description": "scripts do somethings",
+  "author": "Jumorzhu",
+  "license": "ISC",
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "minimist": "^1.2.0"
+  }
+}

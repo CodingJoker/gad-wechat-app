@@ -1,0 +1,32 @@
+<!--
+@Date:   2017-01-17
+@Email:  550928460@qq.com
+@Last modified time: 2017-01-19
+-->
+<view class="container" >
+  <scroll-view class="video-content" bindtouchmove="touchMoveHandler">
+    <view class="video" wx:for="{{videos}}" id="{{'videoBox'+index}}">
+        <view class="cover" hidden="{{item.coverHidden}}">
+          <view class="bc"></view>
+          <image class="cover-img" mode="scaleToFill" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTip8r_RiWUNtsF52lpBpTRWc8HeSweE4-6lPlCs_1lj27kUgXs"></image>
+          <image class="play" mode="scaleToFill" src="../../statics/image/pause.png" data-id="{{index}}" bindtap="playVideo"></image>
+        </view>
+      <video id="{{'video'+index}}" controls="false" src="{{item.src}}"controls="false"  objectFit="fill" autoplay="{{item.autoPlay}}" data-index="{{index}}" bindplay="videoPlayHandler" bindpause="videoPauseHandler"></video>
+      <text class="title">{{item.title}}</text>
+      <view class="ac-b">
+        <view class="lc">
+          <image src="../../statics/image/like.png"></image>
+          <text>10</text>
+        </view>
+        <view class="vc">
+          <image src="../../statics/image/eyes.png"></image>
+          <text>20</text>
+        </view>
+        <view class="cc">
+          <image src="../../statics/image/comment.png"></image>
+          <text>30</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

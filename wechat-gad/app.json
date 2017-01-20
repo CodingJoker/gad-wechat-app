@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/video/video",
+    "pages/self/self",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor":"#09BB07",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "statics/image/tab/home-uf.png",
+      "selectedIconPath": "statics/image/tab/home.png",
+      "text": "社区"
+    },{
+      "pagePath": "pages/video/video",
+      "iconPath": "statics/image/tab/video-uf.png",
+      "selectedIconPath": "statics/image/tab/video.png",
+      "text": "视频"
+    }
+    , {
+      "pagePath": "pages/self/self",
+      "iconPath": "statics/image/tab/user-uf.png",
+      "selectedIconPath": "statics/image/tab/user.png",
+      "text": "自己"
+    }
+    , {
+      "pagePath": "pages/logs/logs",
+      "iconPath": "statics/image/tab/book-uf.png",
+      "selectedIconPath": "statics/image/tab/book.png",
+      "text": "日志"
+    }]
+  }
+}
