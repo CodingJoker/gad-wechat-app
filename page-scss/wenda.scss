@@ -1,0 +1,83 @@
+.wenda-container{
+  background: #EBEBEB;
+  .wenda-list {
+    width: 100%;
+    display: border-box;
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+    .item {
+      background: #fff;
+      display: block;
+      height: 250rpx;
+      display: border-box;
+      padding:20rpx 20rpx;
+      margin-bottom: 10rpx;
+      .left {
+        display: inline-block;
+        width: 480rpx;
+        height: 100%;
+        vertical-align: top;
+        .title{
+          display: block;
+          font-weight: 600;
+          font-size: 40rpx;
+          $h: 70rpx;
+          height:$h;
+          line-height:$h;
+        }
+        .customer-name {
+          display: block;
+          font-size: 30rpx;
+          color:#999;
+          text:not(:last-child):after{
+            content:","
+          }
+        }
+
+      }
+      .right {
+        display: inline-block;
+        $w:230rpx;
+        width: $w;
+        height: 100%;
+        vertical-align: top;
+        .attavr{
+          $imgw:190rpx;
+          margin-left: ($w - $imgw) /2;
+          width: $imgw;
+          height:$imgw;
+          border-radius: $imgw / 2;
+        }
+        .status{
+          text{
+            display: block;
+            width:100%;
+            $h:60rpx;
+            height:$h;
+            line-height:$h;
+            border-radius: 10rpx;
+            text-align: center;
+            font-size: 30rpx;
+          }
+
+          .on {
+            //display: block;
+            background: #CE4537;
+            color:#fff;
+          }
+          .off {
+            //display: block;
+            border:1rpx solid #C5C5C5;
+            background: transparent;
+            color: #b5b5b5;
+          }
+          .not-ready{
+            border: 1rpx solid #626CF5;
+            color: #626CF5;
+          }
+
+        }
+      }
+    }
+  }
+}

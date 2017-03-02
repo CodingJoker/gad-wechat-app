@@ -1,0 +1,20 @@
+<view class="wenda-container">
+    <scroll-view style="height: 600px;" class="wenda-list" scroll-y="true">
+        <view class="item" wx:for="{{list}}">
+                <view class="left">
+                    <text class="title">{{item.title}}</text>
+                    <view class="customer-name">
+                        <text wx:for="{{item.customer}}"  wx:for-item="cus">{{cus.name}}</text>
+                    </view>
+                </view>
+                <view class="right">
+                    <image class="attavr" src="http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"></image>
+                    <view class="status">
+                        <text class="on" wx:if="{{item.liveStatus == 0}}">进行中</text>
+                        <text class="off" wx:if="{{item.liveStatus == -1}}">已结束</text>
+                        <text class="not-ready" wx:if="{{item.liveStatus != 0 && item.liveStatus != -1}}">{{item.liveStatus}}开始</text>
+                    </view>
+                </view>
+        </view>
+    </scroll-view>
+</view>

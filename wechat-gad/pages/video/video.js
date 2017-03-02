@@ -33,7 +33,6 @@ Page({
       this.nowPlayVideo = 0;
   },
   switchVideo:function(id){
-    console.log(id);
       if(id == this.nowPlayVideo){
         var nowVideo = wx.createVideoContext('video'+id);
         this.data.videos[id].coverHidden = true;

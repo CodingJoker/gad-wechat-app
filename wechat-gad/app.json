@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/wenda/wenda",
     "pages/index/index",
     "pages/video/video",
     "pages/self/self",
@@ -23,14 +24,18 @@
       "iconPath": "statics/image/tab/video-uf.png",
       "selectedIconPath": "statics/image/tab/video.png",
       "text": "视频"
-    }
-    , {
+    }, {
+      "pagePath": "pages/wenda/wenda",
+      "iconPath": "statics/image/tab/ask-uf.png",
+      "selectedIconPath": "statics/image/tab/ask.png",
+      "text": "问答"
+    }, {
       "pagePath": "pages/self/self",
       "iconPath": "statics/image/tab/user-uf.png",
       "selectedIconPath": "statics/image/tab/user.png",
       "text": "自己"
     }
-    , {
+    ,{
       "pagePath": "pages/logs/logs",
       "iconPath": "statics/image/tab/book-uf.png",
       "selectedIconPath": "statics/image/tab/book.png",

@@ -52,6 +52,9 @@ gulp.task('page',function(){
   fs.closeSync(fs.openSync(prefix + '/' + option.name + '.wxml', 'w'));
   fs.closeSync(fs.openSync(prefix + '/' + option.name + '.wxss', 'w'));
 
+  fs.closeSync(fs.openSync('./page-scss/'+option.name + '.scss', 'w'));
+
+
 })
 
 gulp.task('rmpage',function(){
@@ -74,7 +77,6 @@ gulp.task('rmpage',function(){
     console.log('all files are removed'.red);
   });
 })
-
 
 //监听scss并编译到page中
 var
