@@ -1,10 +1,10 @@
 .wenda-container {
   background: #EBEBEB; }
   .wenda-container .wenda-list {
+    position: relative;
     width: 100%;
     display: border-box;
-    padding-top: 20rpx;
-    padding-bottom: 20rpx; }
+    padding-top: 20rpx; }
     .wenda-container .wenda-list .item {
       background: #fff;
       display: block;
@@ -21,7 +21,9 @@
           display: block;
           font-weight: 600;
           font-size: 40rpx;
-          height: 70rpx;
+          max-height: 140rpx;
+          overflow: hidden;
+          word-break: break-all;
           line-height: 70rpx; }
         .wenda-container .wenda-list .item .left .customer-name {
           display: block;
@@ -57,3 +59,7 @@
         .wenda-container .wenda-list .item .right .status .not-ready {
           border: 1rpx solid #626CF5;
           color: #626CF5; }
+    .wenda-container .wenda-list .loading {
+      display: block;
+      height: 80rpx;
+      text-align: center; }

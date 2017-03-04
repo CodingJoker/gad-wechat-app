@@ -1,10 +1,10 @@
 .wenda-container{
   background: #EBEBEB;
   .wenda-list {
+    position: relative;
     width: 100%;
     display: border-box;
     padding-top: 20rpx;
-    padding-bottom: 20rpx;
     .item {
       background: #fff;
       display: block;
@@ -22,7 +22,9 @@
           font-weight: 600;
           font-size: 40rpx;
           $h: 70rpx;
-          height:$h;
+          max-height:2 * $h;
+          overflow: hidden;
+          word-break: break-all;
           line-height:$h;
         }
         .customer-name {
@@ -78,6 +80,11 @@
 
         }
       }
+    }
+    .loading{
+      display: block;
+      height:80rpx;
+      text-align: center;
     }
   }
 }

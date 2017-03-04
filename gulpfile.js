@@ -13,6 +13,7 @@ var
   ,sass = require('gulp-sass')
   ,rename = require('gulp-rename')
   ,glob = require('glob')
+  ,exec = require('gulp-exec')
 ;
 
 //目录配置
@@ -124,6 +125,14 @@ gulp.task('scss',function(){
     });
     // return es.merge.apply(es, streams);
 
+})
+
+
+gulp.task('mock',function (cb) {
+  exec('imitator -p 9000 -f ./mockserver/index.js', function (err, stdout, stderr) {
+      console.log(stdout);
+      console.log(stderr);
+  });
 })
 
 function isDirExit(name){

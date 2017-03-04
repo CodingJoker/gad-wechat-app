@@ -1,6 +1,6 @@
 <view class="wenda-container">
-    <scroll-view style="height: 600px;" class="wenda-list" scroll-y="true">
-        <view class="item" wx:for="{{list}}">
+    <scroll-view  style="height: 600px;" class="wenda-list" scroll-y="true" bindscrolltolower="requestData">
+        <view class="item"  wx:for="{{list}}"  bindtap="toDetail" data-liveid="{{item.liveId}}">
                 <view class="left">
                     <text class="title">{{item.title}}</text>
                     <view class="customer-name">
@@ -16,5 +16,6 @@
                     </view>
                 </view>
         </view>
+        <view class="loading">加载中...</view>
     </scroll-view>
 </view>

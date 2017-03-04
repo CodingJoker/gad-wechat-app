@@ -1,64 +1,39 @@
 var app = getApp();
 Page({
-    data:{},
+    data:{
+        list:[{"title":"Legacy Metrics Assistant","customer":[{"name":"Huels","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"},{"name":"Harvey","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"},{"name":"Konopelski","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"}],"time":"2017-03-2 18:00:00"},{"title":"Direct Mobility Producer","customer":[{"name":"Nicolas","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"},{"name":"Reilly","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"},{"name":"Roberts","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"}],"time":"2017-03-2 18:00:00"},{"title":"Forward Accounts Planner","customer":[{"name":"Walker","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"}],"time":"2017-03-2 18:00:00"},{"title":"International Web Assistant","customer":[{"name":"Ondricka","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"},{"name":"Kris","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"},{"name":"Beatty","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"},{"name":"Connelly","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"}],"time":"2017-03-2 18:00:00"}]
+        ,page : 0
+    },
     onLoad:function () {
-     var list = [{
-         title:'这里是标题1',
-         customer:[{
-             name:'Jumor',
-             attavr:"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0",
-         },{
-             name:'Jumor1',
-             attavr:"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0",
-         },{
-             name:'Jumor2',
-             attavr:"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0",
-         }],
-         time:"2017-03-2 18:00:00"
-     },{
-         title:'这里是标题2',
-         customer:[{
-             name:'Shelton',
-             attavr:"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0",
-         },{
-             name:'Shelton',
-             attavr:"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0",
-         },{
-             name:'Jumor2',
-             attavr:"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0",
-         }],
-         time:"2017-02-22 15:00:00"
-     },{
-         title:'这里是标题3',
-         customer:[{
-             name:'Shelton',
-             attavr:"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0",
-         },{
-             name:'Shelton',
-             attavr:"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0",
-         },{
-             name:'Jumor2',
-             attavr:"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0",
-         }],
-         time:"2017-03-2 20:00:00"
-     },{
-         title:'这里是标题4',
-         customer:[{
-             name:'Shelton',
-             attavr:"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0",
-         },{
-             name:'Shelton',
-             attavr:"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0",
-         },{
-             name:'Jumor2',
-             attavr:"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0",
-         }],
-         time:"2017-02-22 15:00:00"
-     }];
-
-    this.setData({
-        'list':  packData(list)
-    });
+        this.requestData();
+    },
+    requestData:function () {
+        console.log('call request');
+        var that = this;
+       setTimeout(function () {
+           wx.request({
+               url:app.globalData.domain + '/live/list?page='+ that.data.page,
+               success:function (res) {
+                 if(that.data.page == 0){
+                     list = packData(res.data);
+                 }else{
+                     var list = that.data.list.concat(packData(res.data));
+                 }
+                   that.setData({
+                       list:  list,
+                       page: that.data.page + 1
+                   });
+                   console.log(that.data.list);
+               }
+           });
+       },500);
+    },
+    toDetail:function (e) {
+        var url = '../wenda-detail/wenda-detail?id='+e.currentTarget.dataset.liveidgit ;
+        console.log(url);
+        wx.navigateTo({
+            url: url
+        })
     }
 })
 
@@ -71,7 +46,6 @@ function packData(data) {
        var temp = Object.assign({},data[i],{liveStatus:formateTime(time,nowTime)});
        newData.push(temp);
     }
-    console.log(newData);
     return newData.sort(timeSort);
 }
 

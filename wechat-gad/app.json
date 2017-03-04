@@ -4,13 +4,15 @@
     "pages/index/index",
     "pages/video/video",
     "pages/self/self",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/wenda-detail/wenda-detail"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true
   },
   "tabBar": {
     "selectedColor":"#09BB07",
@@ -41,5 +43,6 @@
       "selectedIconPath": "statics/image/tab/book.png",
       "text": "日志"
     }]
-  }
+  },
+  "debug":true
 }
