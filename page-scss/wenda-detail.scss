@@ -1,0 +1,155 @@
+$grey:#717171;
+.container{
+  width: 750rpx;
+  height:100vh;
+  box-sizing: border-box;
+  $p:45rpx;
+  padding:$p;
+  .topic {
+    display: block;
+    $th:230rpx;
+    height:$th;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15rpx;
+    .left{
+      display: inline-block;
+      box-sizing: border-box;
+      width:250rpx - $p;
+      height:100%;
+      image{
+        $w:200rpx;
+        border-radius:$w /2;
+        width:$w;
+        height:$w;
+      }
+    }
+    .right{
+      display: inline-block;
+      vertical-align: top;
+      width:500rpx - $p;
+      height: 100%;
+      .title{
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        font-weight: 550;
+        font-size: 45rpx;
+        $h:60rpx;
+        height:$h;
+        line-height:$h;
+      }
+      .cs-name{
+        display: block;
+        $h:60rpx;
+        height:$h;
+        line-height:$h;
+        color:$grey;
+        font-size:35rpx;
+        text{
+          &:not(:last-child):after{
+            content:','
+          }
+        }
+      }
+      .time {
+        display: block;
+        font-weight: 500;
+        font-size: 30rpx;
+        text{
+          display: block;
+        }
+      }
+
+    }
+
+  }
+  .tp-info{
+    display: block;
+    padding-bottom: 20rpx;
+    margin-bottom: 20rpx;
+    border-bottom: 1rpx solid #bbb;
+    .head {
+      display: block;
+      margin-bottom: 10rpx;
+    }
+    .info{
+      display: block;
+      font-size: 30rpx;
+      color: $grey;
+      //$h:200rpx;
+      //height:$h;
+    }
+  }
+  .cs-container {
+    display: block;
+    .head {
+      display: block;
+      margin-bottom: 10rpx;
+    }
+    .cs{
+      display: block;
+      min-height:150rpx;
+      $leftW:80rpx;
+      border-bottom: 1rpx solid #bbb;
+      padding-bottom: 20rpx;
+      margin-bottom: 20rpx;
+      .left{
+        display: inline-block;
+        width:$leftW;
+        height:100%;
+        image{
+          width: $leftW;
+          height:$leftW;
+          border-radius: $leftW / 2;
+        }
+      }
+      .info{
+        display: inline-block;
+        box-sizing: border-box;
+        padding-top: $leftW / 5;
+        padding-left: 10rpx;
+        vertical-align: top;
+        width:750rpx - $leftW - 2 * $p;
+        font-size: 30rpx;
+        color: $grey;
+      }
+    }
+  }
+  .copyright {
+    display: block;
+    padding-bottom: 20rpx;
+    margin-bottom: 120rpx;
+    .head {
+      display: block;
+      margin-bottom: 10rpx;
+    }
+    .info{
+      display: block;
+      font-size: 30rpx;
+      color: $grey;
+      //$h:200rpx;
+      //height:$h;
+    }
+  }
+  .buy {
+    display: block;
+    position: fixed;
+    left:0;
+    bottom:0;
+    $bh:120rpx;
+    height:$bh;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    .btn{
+      width:100%;
+      $h:80rpx;
+      height:$h;
+      line-height: $h;
+      margin-top:($bh - $h) / 2;
+      text-align: center;
+      background-color: #F3A113;
+      color: #fff;
+      font-size: 30rpx;
+    }
+  }
+}

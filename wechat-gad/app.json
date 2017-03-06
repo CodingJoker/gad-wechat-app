@@ -5,7 +5,8 @@
     "pages/video/video",
     "pages/self/self",
     "pages/logs/logs",
-    "pages/wenda-detail/wenda-detail"
+    "pages/wenda-detail/wenda-detail",
+    "pages/wenda-chatroom/wenda-chatroom"
   ],
   "window":{
     "backgroundTextStyle":"light",

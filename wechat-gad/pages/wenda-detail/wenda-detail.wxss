@@ -1,0 +1,114 @@
+.container {
+  width: 750rpx;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 45rpx; }
+  .container .topic {
+    display: block;
+    height: 230rpx;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15rpx; }
+    .container .topic .left {
+      display: inline-block;
+      box-sizing: border-box;
+      width: 205rpx;
+      height: 100%; }
+      .container .topic .left image {
+        border-radius: 100rpx;
+        width: 200rpx;
+        height: 200rpx; }
+    .container .topic .right {
+      display: inline-block;
+      vertical-align: top;
+      width: 455rpx;
+      height: 100%; }
+      .container .topic .right .title {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        font-weight: 550;
+        font-size: 45rpx;
+        height: 60rpx;
+        line-height: 60rpx; }
+      .container .topic .right .cs-name {
+        display: block;
+        height: 60rpx;
+        line-height: 60rpx;
+        color: #717171;
+        font-size: 35rpx; }
+        .container .topic .right .cs-name text:not(:last-child):after {
+          content: ','; }
+      .container .topic .right .time {
+        display: block;
+        font-weight: 500;
+        font-size: 30rpx; }
+        .container .topic .right .time text {
+          display: block; }
+  .container .tp-info {
+    display: block;
+    padding-bottom: 20rpx;
+    margin-bottom: 20rpx;
+    border-bottom: 1rpx solid #bbb; }
+    .container .tp-info .head {
+      display: block;
+      margin-bottom: 10rpx; }
+    .container .tp-info .info {
+      display: block;
+      font-size: 30rpx;
+      color: #717171; }
+  .container .cs-container {
+    display: block; }
+    .container .cs-container .head {
+      display: block;
+      margin-bottom: 10rpx; }
+    .container .cs-container .cs {
+      display: block;
+      min-height: 150rpx;
+      border-bottom: 1rpx solid #bbb;
+      padding-bottom: 20rpx;
+      margin-bottom: 20rpx; }
+      .container .cs-container .cs .left {
+        display: inline-block;
+        width: 80rpx;
+        height: 100%; }
+        .container .cs-container .cs .left image {
+          width: 80rpx;
+          height: 80rpx;
+          border-radius: 40rpx; }
+      .container .cs-container .cs .info {
+        display: inline-block;
+        box-sizing: border-box;
+        padding-top: 16rpx;
+        padding-left: 10rpx;
+        vertical-align: top;
+        width: 580rpx;
+        font-size: 30rpx;
+        color: #717171; }
+  .container .copyright {
+    display: block;
+    padding-bottom: 20rpx;
+    margin-bottom: 120rpx; }
+    .container .copyright .head {
+      display: block;
+      margin-bottom: 10rpx; }
+    .container .copyright .info {
+      display: block;
+      font-size: 30rpx;
+      color: #717171; }
+  .container .buy {
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 120rpx;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); }
+    .container .buy .btn {
+      width: 100%;
+      height: 80rpx;
+      line-height: 80rpx;
+      margin-top: 20rpx;
+      text-align: center;
+      background-color: #F3A113;
+      color: #fff;
+      font-size: 30rpx; }

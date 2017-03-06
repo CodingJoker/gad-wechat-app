@@ -6,9 +6,11 @@
 */
 
 var liveList = require('./live/list');
+var liveDetail = require('./live/detail');
 
  module.exports = function(imitator) {
      // 返回一个json
      imitator('/json', {name: 'hello world'});
      imitator('/live/list', liveList());
+     imitator('/live/detail/', liveDetail());
  }

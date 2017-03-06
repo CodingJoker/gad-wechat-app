@@ -82,7 +82,7 @@ gulp.task('rmpage',function(){
 //监听scss并编译到page中
 var
   watcher = gulp.watch(['./page-scss/**'])
-  ,fileNameReg = /.*page-scss\\([\w]+)\.scss/
+  ,fileNameReg = /.*page-scss\\([\w-]+)\.scss/
 ;
 
 gulp.task('pagescss',['scss'],function(){
@@ -106,7 +106,7 @@ gulp.task('pagescss',['scss'],function(){
 gulp.task('scss',function(){
     var
       files = glob.sync('page-scss/*.scss')
-      ,fileNameReg = /page-scss\/([\w]+).scss/
+      ,fileNameReg = /page-scss\/([\w-]+).scss/
       ,streams
     ;
 

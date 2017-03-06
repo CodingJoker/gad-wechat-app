@@ -1,0 +1,46 @@
+<view class="container">
+    <view class="topic">
+        <view class="left">
+            <image src="{{topic.customer[0].attavr}}"></image>
+        </view>
+        <view class="right">
+            <text class="title">{{topic.title}}</text>
+            <view class="cs-name">
+                <text wx:for="{{topic.customer}}">{{item.name}}</text>
+            </view>
+            <view class="time">
+               <view>
+                   <text wx:if="{{topic.liveStatus == -1}}">时间（已结束）</text>
+                   <text wx:if="{{topic.liveStatus == 0}}">时间（正在进行中）</text>
+                   <text wx:if="{{topic.liveStatus > 0}}">时间（{{topic.liveStatus}}）</text>
+               </view>
+                <text>{{topic.time}}</text>
+            </view>
+        </view>
+        <view class="buyers">
+            <image></image>
+        </view>
+    </view>
+    <view class="tp-info">
+        <view class="head">Live简介</view>
+        <text class="info">{{topic.liveDesc}}</text>
+    </view>
+    <view class="cs-container">
+        <view class="head">主讲嘉宾</view>
+        <view class="cs" wx:for="{{topic.customer}}">
+            <view class="left">
+                <image src="{{item.attavr}}"></image>
+            </view>
+            <text class="info">{{item.desc}}</text>
+        </view>
+    </view>
+    <view class="copyright">
+        <view class="head">版权声明</view>
+        <text class="info">讲者在本产品上发表的全部远程内容（包括但不限于文字、音频、图片等）著作权均归讲者本人所有。胃镜讲者授权许可，听众用户不得以任何载体或形式使用讲者的内容。
+        </text>
+    </view>
+    <view class="buy">
+        <view class="btn" wx:if="{{topic.hasBuy}}" bindtap="toChatRoom">进入直播</view>
+        <view class="btn" wx:if="{{!topic.hasBuy}}" bindtap="buy">打赏并参与live问答（{{topic.price}}元）</view>
+    </view>
+</view>

@@ -14,22 +14,23 @@ Page({
            wx.request({
                url:app.globalData.domain + '/live/list?page='+ that.data.page,
                success:function (res) {
+                 var list =  [];
                  if(that.data.page == 0){
                      list = packData(res.data);
                  }else{
-                     var list = that.data.list.concat(packData(res.data));
+                     list = that.data.list.concat(packData(res.data));
                  }
                    that.setData({
                        list:  list,
                        page: that.data.page + 1
                    });
-                   console.log(that.data.list);
+                 app.globalData.liveList = list;
                }
            });
        },500);
     },
     toDetail:function (e) {
-        var url = '../wenda-detail/wenda-detail?id='+e.currentTarget.dataset.liveidgit ;
+        var url = '../wenda-detail/wenda-detail?id='+e.currentTarget.dataset.liveid;
         console.log(url);
         wx.navigateTo({
             url: url
@@ -72,6 +73,4 @@ function timeSort(a1,a2) {
         ,a2Time = new Date(Date.parse(a2.time.replace(/-/g,'/'))).getTime()
     ;
     return a1Time < a2Time;
-
-
 }
