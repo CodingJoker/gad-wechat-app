@@ -1,0 +1,275 @@
+$grey:#717171;
+.bob{
+  border-bottom: 1rpx solid #ccc;
+}
+.container{
+  display: block;
+  box-sizing:border-box;
+  height:100vh;
+  $cp:20rpx;
+  padding:$cp;
+  .room-info {
+    display: block;
+    $attavr-w:150rpx;
+    height: $attavr-w;
+    padding-bottom: 30rpx;
+
+    .attavr {
+      display: inline-block;
+      vertical-align: middle;
+      width:$attavr-w;
+      height:$attavr-w;
+      image{
+        border-radius: 50%;
+        width:100%;
+        height:100%;
+      }
+    }
+    .name{
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      width:750rpx - $attavr-w - 2*$cp;
+      padding-top: 10rpx;
+      padding-left: 20rpx;
+      height:100%;
+    }
+  }
+
+  .topic-info{
+    display: block;
+    box-sizing: border-box;
+    padding:25rpx 20rpx;
+    .head{
+      display: block;
+      padding-bottom: 10rpx;
+
+    }
+    .text{
+      display: block;
+      font-size: 30rpx;
+      color:$grey;
+    }
+  }
+
+  .chat-box{
+    display: block;
+    margin-top: 20rpx;
+    $atpt:40rpx;
+    .loading{
+      display: block;
+      text-align: center;
+      height:30rpx;
+      font-size: 25rpx;
+      background-color: #FFFFFF;
+      padding-bottom: 20rpx;
+      color: #c9c9c9;
+    }
+    .time{
+      display: block;
+      text-align: center;
+      height:30rpx;
+      font-size: 25rpx;
+      background-color: #FFFFFF;
+      padding-bottom: 20rpx;
+      color: #c9c9c9;
+    }
+    .inner{
+      display: block;
+      width:100%;
+      $h:100rpx;
+      margin-bottom: 30rpx;
+      min-height:$h;
+      .head{
+        display: inline-block;
+        padding-top: $atpt;
+        vertical-align: top;
+        width: $h;
+        height:$h;
+        image{
+          border-radius: 50%;
+          width:100%;
+          height: 100%;
+        }
+      }
+      .ctx{
+        display: inline-block;
+        width:500rpx;;
+        .name{
+          display: block;
+          vertical-align: bottom;
+          height:$atpt;
+          font-size: 25rpx;
+          color: $grey;
+          padding-left: 10rpx;
+          .user-role{
+            display: inline-block;
+            margin-right: 20rpx;
+            vertical-align: middle;
+            height:$atpt;
+            .icon{
+              display: inline-block;
+              width:$atpt;
+              height:$atpt;
+              margin-right: 10rpx;
+              &.admin{
+                background: url('../../statics/image/admin.png') no-repeat 10% 10%; ;
+                background-size: 90%;
+              }
+            }
+            .role-name{
+              display: inline-block;
+              vertical-align: top;
+              color:#2f8cff;
+
+            }
+          }
+          .user-name{
+            display: inline-block;
+            vertical-align: top;
+            height:$atpt;
+          }
+        }
+        .user-text{
+          display: block;
+          margin-top: $h/6;
+          margin-bottom: 20rpx;
+         view{
+           display: inline-block;
+           box-sizing: border-box;
+           padding: 15rpx 25rpx;
+           background:#2f8cff;
+           font-size: 30rpx;
+           border-radius:20rpx;
+           color:#fff;
+         }
+        }
+        .like{
+          display: block;
+
+          $w:40rpx;
+          .icon {
+            display: inline-block;
+            $w:40rpx;
+            width: $w;
+            height: $w;
+            background: url('../../statics/image/unliked.png') no-repeat 0 0;
+            background-size: 100%;
+            &.liked {
+              background: url('../../statics/image/liked.png') no-repeat 0 0;
+              background-size: 100%;
+            }
+          }
+          .text{
+            display: inline-block;
+            font-size: 25rpx;
+            color:#717171;
+            vertical-align: top;
+            height: $w;
+            line-height:$w;
+            margin-left: 10rpx;
+          }
+        }
+      }
+      &.right{
+        .head{
+          float:right;
+        }
+        .ctx{
+          float:right;
+          .name{
+            display: block;
+            text-align: right;
+          }
+          .user-text{
+            view{
+              float: right;
+              display: inline-block;
+              box-sizing: border-box;
+              padding: 15rpx 25rpx;
+              background:#ebebeb;
+              font-size: 30rpx;
+              border-radius:20rpx;
+              color:#333333;
+            }
+            &:after{
+              content: ' ';
+              display: block;
+              width:0;
+              height:0;
+              clear:both;
+            }
+          }
+          .like{
+            text-align: right;
+          }
+        }
+      }
+      &:after{
+        content: ' ';
+        display: block;
+        width:0;
+        height:0;
+        clear:both;
+      }
+    }
+  }
+
+  .input-box{
+    position: fixed;
+    bottom:0;
+    left:0;
+    display: block;
+    height:10vh;
+    $w:100rpx;
+    background-color: #fff;
+    .choose-img{
+      display: inline-block;
+      width:$w;
+      height:100%;
+      border-radius: $w / 2;
+    }
+    textarea{
+      display: block;
+      $mplr:20rpx;
+      $pl:15rpx;
+      height:1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      width: 750rpx - 2*$mplr - $pl;
+      padding-left: $pl;
+      margin-left: $mplr;
+      margin-top:3%;
+      border: 1px solid #ccc;
+      border-radius: 15rpx;
+    }
+  }
+  .more-msg{
+    box-sizing: border-box;
+    padding: 0 15rpx;
+    position: fixed;
+    top:100rpx;
+    right:0;
+    min-width:200rpx;
+    $h:80rpx;
+    height:$h;
+    line-height: $h;
+    background-color: #ccc;
+    border-radius: $h/2 0 0 $h/2;
+    font-size: 35rpx;
+    border:1px solid #e0e0e0;
+    background-color: #fff;
+    .icon{
+      display: inline-block;
+      vertical-align: top;
+      width: $h;
+      height:$h;
+      background: url('../../statics/image/up-more.png') no-repeat 30% 50% ;
+      background-size: 50%;
+    }
+    .msg{
+      display: inline-block;
+      color:#18aa48;
+    }
+  }
+}

@@ -25,7 +25,6 @@ App({
     }
   },
   globalData:{
-    userInfo:null,
-    domain:'http://localhost:9000'
+    userInfo:null
   }
 })

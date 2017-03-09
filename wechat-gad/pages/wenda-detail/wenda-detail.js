@@ -1,5 +1,5 @@
 var app =  getApp();
-
+var config = require('../../config.js');
 Page({
     onLoad: function(option){
         var topic;
@@ -24,7 +24,7 @@ Page({
     requestData:function (id) {
         var that = this;
         wx.request({
-            url:app.globalData.domain + '/live/detail/' + id,
+            url:config.host+ '/live/detail/' + id,
             success:function (res) {
                 that.setData({
                     topic:transData(res.data)

@@ -1,4 +1,5 @@
 var app = getApp();
+var config = require('../../config.js');
 Page({
     data:{
         list:[{"title":"Legacy Metrics Assistant","customer":[{"name":"Huels","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"},{"name":"Harvey","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"},{"name":"Konopelski","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"}],"time":"2017-03-2 18:00:00"},{"title":"Direct Mobility Producer","customer":[{"name":"Nicolas","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"},{"name":"Reilly","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"},{"name":"Roberts","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"}],"time":"2017-03-2 18:00:00"},{"title":"Forward Accounts Planner","customer":[{"name":"Walker","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"}],"time":"2017-03-2 18:00:00"},{"title":"International Web Assistant","customer":[{"name":"Ondricka","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"},{"name":"Kris","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"},{"name":"Beatty","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"},{"name":"Connelly","attavr":"http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"}],"time":"2017-03-2 18:00:00"}]
@@ -12,7 +13,7 @@ Page({
         var that = this;
        setTimeout(function () {
            wx.request({
-               url:app.globalData.domain + '/live/list?page='+ that.data.page,
+               url:config.host + '/live/list?page='+ that.data.page,
                success:function (res) {
                  var list =  [];
                  if(that.data.page == 0){

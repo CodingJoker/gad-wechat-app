@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e3022aa-7a5d-40d7-8fa8-5c5eb3b7a476" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mockserver/live/detail.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/page-scss/live-detail.scss" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socket-server/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wechat-gad/config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mockserver/index.js" afterPath="$PROJECT_DIR$/mockserver/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mockserver/live/list.js" afterPath="$PROJECT_DIR$/mockserver/live/list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page-scss/wenda-detail.scss" afterPath="$PROJECT_DIR$/page-scss/wenda-detail.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page-scss/wenda-chatroom.scss" afterPath="$PROJECT_DIR$/page-scss/wenda-chatroom.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wechat-gad/app.js" afterPath="$PROJECT_DIR$/wechat-gad/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wechat-gad/app.json" afterPath="$PROJECT_DIR$/wechat-gad/app.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wechat-gad/pages/wenda-chatroom/wenda-chatroom.js" afterPath="$PROJECT_DIR$/wechat-gad/pages/wenda-chatroom/wenda-chatroom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wechat-gad/pages/wenda-chatroom/wenda-chatroom.wxml" afterPath="$PROJECT_DIR$/wechat-gad/pages/wenda-chatroom/wenda-chatroom.wxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wechat-gad/pages/wenda-chatroom/wenda-chatroom.wxss" afterPath="$PROJECT_DIR$/wechat-gad/pages/wenda-chatroom/wenda-chatroom.wxss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wechat-gad/pages/wenda-detail/wenda-detail.js" afterPath="$PROJECT_DIR$/wechat-gad/pages/wenda-detail/wenda-detail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wechat-gad/pages/wenda-detail/wenda-detail.wxml" afterPath="$PROJECT_DIR$/wechat-gad/pages/wenda-detail/wenda-detail.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wechat-gad/pages/wenda-detail/wenda-detail.wxss" afterPath="$PROJECT_DIR$/wechat-gad/pages/wenda-detail/wenda-detail.wxss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wechat-gad/pages/wenda/wenda.js" afterPath="$PROJECT_DIR$/wechat-gad/pages/wenda/wenda.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -33,122 +33,100 @@
     <favorites_list name="gad-small-app" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4468922">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="app.json" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/wechat-gad/app.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-                  <folding>
-                    <element signature="e#487#659#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="wenda-detail.wxml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda-detail/wenda-detail.wxml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="687">
-                  <caret line="43" column="64" lean-forward="false" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="wenda-chatroom.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda-chatroom/wenda-chatroom.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="66">
-                  <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="wenda-chatroom.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda-chatroom/wenda-chatroom.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="44">
-                  <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="wenda.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda/wenda.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="22">
-                  <caret line="1" column="32" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="wenda.wxml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda/wenda.wxml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="44">
-                  <caret line="2" column="76" lean-forward="false" selection-start-line="2" selection-start-column="76" selection-end-line="2" selection-end-column="76" />
-                  <folding>
-                    <element signature="n#style#0;n#scroll-view#0;n#view#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="wenda.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda/wenda.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="660">
-                  <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="list.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/mockserver/live/list.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="594">
-                  <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="19" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="detail.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/mockserver/live/detail.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-                  <folding>
-                    <element signature="e#600#1568#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="wenda-detail.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda-detail/wenda-detail.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wechat-gad/app.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="42" lean-forward="false" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+              <folding>
+                <element signature="e#487#659#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wechat-gad/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wenda-chatroom.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda-chatroom/wenda-chatroom.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wenda-chatroom.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda-chatroom/wenda-chatroom.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/socket-server/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-690">
+              <caret line="60" column="43" lean-forward="true" selection-start-line="60" selection-start-column="43" selection-end-line="60" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wenda-detail.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda-detail/wenda-detail.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wechat-gad/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mockserver/live/list.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wenda.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda/wenda.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -169,6 +147,7 @@
       <find>&lt;img</find>
       <find>img</find>
       <find>&lt;image</find>
+      <find>fon</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;view</replace>
@@ -192,7 +171,6 @@
         <option value="$PROJECT_DIR$/wechat-gad/pages/index/index.js" />
         <option value="$PROJECT_DIR$/wechat-gad/pages/video/video.js" />
         <option value="$PROJECT_DIR$/mockserver/route-data/live/list.js" />
-        <option value="$PROJECT_DIR$/wechat-gad/app.js" />
         <option value="$PROJECT_DIR$/page-scss/wenda.scss" />
         <option value="$PROJECT_DIR$/wechat-gad/pages/wenda/wenda.json" />
         <option value="$PROJECT_DIR$/wechat-gad/pages/wenda-detail/wenda-detail.json" />
@@ -202,12 +180,19 @@
         <option value="$PROJECT_DIR$/mockserver/live/detail.js" />
         <option value="$PROJECT_DIR$/mockserver/live/list.js" />
         <option value="$PROJECT_DIR$/mockserver/index.js" />
-        <option value="$PROJECT_DIR$/wechat-gad/pages/wenda/wenda.js" />
         <option value="$PROJECT_DIR$/wechat-gad/pages/wenda-detail/wenda-detail.wxml" />
         <option value="$PROJECT_DIR$/wechat-gad/pages/wenda-chatroom/wenda-chatroom.json" />
-        <option value="$PROJECT_DIR$/wechat-gad/pages/wenda-chatroom/wenda-chatroom.js" />
+        <option value="E:/code/Gad/branches/design/public/assets/web/css/live/live.css" />
+        <option value="$PROJECT_DIR$/page-scss/wenda-chatroom.scss" />
+        <option value="$PROJECT_DIR$/wechat-gad/pages/wenda-chatroom/wenda-chatroom.wxml" />
+        <option value="$PROJECT_DIR$/wechat-gad/app.js" />
+        <option value="$PROJECT_DIR$/wechat-gad/config.js" />
+        <option value="$PROJECT_DIR$/wechat-gad/pages/wenda/wenda.js" />
         <option value="$PROJECT_DIR$/wechat-gad/pages/wenda-detail/wenda-detail.js" />
         <option value="$PROJECT_DIR$/wechat-gad/app.json" />
+        <option value="$PROJECT_DIR$/socket-server/app.js" />
+        <option value="$PROJECT_DIR$/socket-server/console.js" />
+        <option value="$PROJECT_DIR$/wechat-gad/pages/wenda-chatroom/wenda-chatroom.js" />
       </list>
     </option>
   </component>
@@ -274,11 +259,6 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectStartupLocalConfiguration">
-    <configurations>
-      <configuration id="Node.js.gad" name="gad" />
-    </configurations>
-  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -316,115 +296,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wechat-gad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gad-small-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gad-small-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wechat-gad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wenda-detail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gad-small-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gad-small-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wechat-gad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wenda-chatroom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gad-small-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gad-small-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wechat-gad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gad-small-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gad-small-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="page-scss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gad-small-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gad-small-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mockserver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gad-small-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gad-small-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mockserver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="live" />
+              <option name="myItemId" value="socket-server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -436,7 +308,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mockserver" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/socket-server/app.js" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="E:\mygithub\gad-small-app\node_modules\gulp" />
     <property name="js.eslint.eslintPackage" value="" />
@@ -455,29 +327,7 @@
       <recent name="E:\mygithub\gad-small-app\mockserver" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.index.js">
-    <configuration default="false" name="rmpage" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
-      <tasks>
-        <task>rmpage</task>
-      </tasks>
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="scss" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
-      <tasks>
-        <task>scss</task>
-      </tasks>
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Node.js.console.js">
     <configuration default="false" name="default" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -489,34 +339,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="index.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="index.js" working-dir="$PROJECT_DIR$/mockserver">
-      <profiling v8-profiler-path="" />
-      <EXTENSION ID="com.jetbrains.nodejs.remote.docker.NodeJSDockerRunConfigurationExtension">
-        <option name="envVars">
-          <list />
-        </option>
-        <option name="extraHosts">
-          <list />
-        </option>
-        <option name="links">
-          <list />
-        </option>
-        <option name="networkDisabled" value="false" />
-        <option name="networkMode" value="bridge" />
-        <option name="portBindings">
-          <list />
-        </option>
-        <option name="publishAllPorts" value="false" />
-        <option name="version" value="1" />
-        <option name="volumeBindings">
-          <list />
-        </option>
-      </EXTENSION>
-      <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSProfilingRunConfigurationExtension">
-        <profiling v8-profiler-path="" />
-      </EXTENSION>
-      <method />
-    </configuration>
     <configuration default="false" name="pagescss" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -526,6 +348,15 @@
       </tasks>
       <arguments />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="console.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="console.js" working-dir="$PROJECT_DIR$/socket-server">
+      <method />
+    </configuration>
+    <configuration default="false" name="wenda-chatroom.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="wenda-chatroom.js" working-dir="$PROJECT_DIR$/wechat-gad/pages/wenda-chatroom">
+      <method />
+    </configuration>
+    <configuration default="false" name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/socket-server">
       <method />
     </configuration>
     <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
@@ -673,49 +504,32 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <configuration default="false" name="gad" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" application-parameters="imitator -p 9000 -f index.js" working-dir="$PROJECT_DIR$">
-      <profiling v8-profiler-path="" />
-      <EXTENSION ID="com.jetbrains.nodejs.remote.docker.NodeJSDockerRunConfigurationExtension">
-        <option name="envVars">
-          <list />
-        </option>
-        <option name="extraHosts">
-          <list />
-        </option>
-        <option name="links">
-          <list />
-        </option>
-        <option name="networkDisabled" value="false" />
-        <option name="networkMode" value="bridge" />
-        <option name="portBindings">
-          <list />
-        </option>
-        <option name="publishAllPorts" value="false" />
-        <option name="version" value="1" />
-        <option name="volumeBindings">
-          <list />
-        </option>
-      </EXTENSION>
-      <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSProfilingRunConfigurationExtension">
-        <profiling v8-profiler-path="" />
-      </EXTENSION>
+    <configuration default="false" name="rmpage" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>rmpage</task>
+      </tasks>
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.gad" />
-      <item index="1" class="java.lang.String" itemvalue="Gulp.js.rmpage" />
-      <item index="2" class="java.lang.String" itemvalue="Gulp.js.scss" />
-      <item index="3" class="java.lang.String" itemvalue="Gulp.js.default" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.index.js" />
-      <item index="5" class="java.lang.String" itemvalue="Gulp.js.pagescss" />
+      <item index="0" class="java.lang.String" itemvalue="Gulp.js.rmpage" />
+      <item index="1" class="java.lang.String" itemvalue="Gulp.js.default" />
+      <item index="2" class="java.lang.String" itemvalue="Gulp.js.pagescss" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.console.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.wenda-chatroom.js" />
+      <item index="5" class="java.lang.String" itemvalue="Node.js.app.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gulp.js.pagescss" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.index.js" />
-        <item index="2" class="java.lang.String" itemvalue="Gulp.js.default" />
-        <item index="3" class="java.lang.String" itemvalue="Gulp.js.scss" />
-        <item index="4" class="java.lang.String" itemvalue="Gulp.js.rmpage" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.console.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.wenda-chatroom.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.app.js" />
+        <item index="3" class="java.lang.String" itemvalue="Gulp.js.pagescss" />
+        <item index="4" class="java.lang.String" itemvalue="Gulp.js.default" />
       </list>
     </recent_temporary>
   </component>
@@ -731,12 +545,12 @@
       <updated>1488354092951</updated>
       <workItem from="1488354094202" duration="10409000" />
       <workItem from="1488424178130" duration="23997000" />
-      <workItem from="1488515627370" duration="31366000" />
+      <workItem from="1488515627370" duration="65812000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65772000" />
+    <option name="totallyTimeSpent" value="100218000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -751,18 +565,18 @@
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15838853" sideWeight="0.54319656" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15838853" sideWeight="0.45680344" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14128035" sideWeight="0.5475162" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14900662" sideWeight="0.4524838" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16335541" sideWeight="0.4913607" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5022075" sideWeight="0.4913607" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.4913607" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1401766" sideWeight="0.49352053" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13962473" sideWeight="0.49352053" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15838853" sideWeight="0.54319656" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39956802" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -810,87 +624,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wechat-gad/app.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" column="37" lean-forward="false" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-          <folding>
-            <element signature="e#487#659#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wechat-gad/pages/video/video.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda/wenda.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda/wenda.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wechat-gad/pages/video/video.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wechat-gad/pages/video/video.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wechat-gad/pages/index/index.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda/wenda.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#scroll-view#0;n#view#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wechat-gad/pages/article/article.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wechat-gad/pages/article/article.wxss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/page-scss/article.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -901,13 +634,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda/12.js" />
     <entry file="file://$PROJECT_DIR$/wechat-gad/pages/index/12.html" />
-    <entry file="file://$PROJECT_DIR$/wechat-gad/pages/index/index.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wechat-gad/pages/video/video.wxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1023,14 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wechat-gad/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda-detail/wenda-detail.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -1057,29 +775,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page-scss/wenda-detail.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="120" column="18" lean-forward="false" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
-          <folding>
-            <element signature="e#2009#2260#0" expanded="false" />
-            <element signature="e#2437#2548#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mockserver/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda/wenda.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="32" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1102,6 +801,117 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda/wenda.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="76" lean-forward="false" selection-start-line="2" selection-start-column="76" selection-end-line="2" selection-end-column="76" />
+          <folding>
+            <element signature="n#style#0;n#scroll-view#0;n#view#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda/wenda.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="32" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda-chatroom/wenda-chatroom.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/code/Gad/branches/design/public/assets/web/css/live/live.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page-scss/wenda-detail.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="14" />
+          <folding>
+            <element signature="e#2009#2260#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat-gad/pages/index/index.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat-gad/statics/image/up-mpre.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat-gad/statics/image/liked.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda-chatroom/wenda-chatroom.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="158" column="35" lean-forward="false" selection-start-line="158" selection-start-column="35" selection-end-line="158" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#scroll-view#0;n#view#0;n#!!top" expanded="false" />
+            <element signature="n#view#0;n#scroll-view#0;n#view#0;n#!!top" expanded="false" />
+            <element signature="n#view#1;n#scroll-view#0;n#view#0;n#!!top" expanded="false" />
+            <element signature="n#view#2;n#view#2;n#scroll-view#0;n#view#0;n#!!top" expanded="false" />
+            <element signature="n#view#0;n#view#2;n#view#2;n#scroll-view#0;n#view#0;n#!!top" expanded="false" />
+            <element signature="n#view#4;n#view#2;n#scroll-view#0;n#view#0;n#!!top" expanded="false" />
+            <element signature="n#view#0;n#view#4;n#view#2;n#scroll-view#0;n#view#0;n#!!top" expanded="false" />
+            <element signature="n#view#6;n#view#2;n#scroll-view#0;n#view#0;n#!!top" expanded="false" />
+            <element signature="n#view#0;n#view#6;n#view#2;n#scroll-view#0;n#view#0;n#!!top" expanded="false" />
+            <element signature="n#view#8;n#view#2;n#scroll-view#0;n#view#0;n#!!top" expanded="false" />
+            <element signature="n#view#0;n#view#8;n#view#2;n#scroll-view#0;n#view#0;n#!!top" expanded="false" />
+            <element signature="n#view#10;n#view#2;n#scroll-view#0;n#view#0;n#!!top" expanded="false" />
+            <element signature="n#view#0;n#view#10;n#view#2;n#scroll-view#0;n#view#0;n#!!top" expanded="false" />
+            <element signature="n#view#12;n#view#2;n#scroll-view#0;n#view#0;n#!!top" expanded="false" />
+            <element signature="n#view#0;n#view#12;n#view#2;n#scroll-view#0;n#view#0;n#!!top" expanded="false" />
+            <element signature="n#view#1;n#view#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockserver/live/list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat-gad/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda-chatroom/wenda-chatroom.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -1110,55 +920,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda-chatroom/wenda-chatroom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mockserver/live/list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda/wenda.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="40" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda-detail/wenda-detail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda/wenda.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="76" lean-forward="false" selection-start-line="2" selection-start-column="76" selection-end-line="2" selection-end-column="76" />
-          <folding>
-            <element signature="n#style#0;n#scroll-view#0;n#view#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wechat-gad/app.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        <state relative-caret-position="44">
+          <caret line="2" column="42" lean-forward="false" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
           <folding>
             <element signature="e#487#659#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda-detail/wenda-detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page-scss/wenda-chatroom.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="129" column="25" lean-forward="false" selection-start-line="129" selection-start-column="25" selection-end-line="129" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat-gad/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat-gad/pages/wenda-chatroom/wenda-chatroom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socket-server/console.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socket-server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-690">
+          <caret line="60" column="43" lean-forward="true" selection-start-line="60" selection-start-column="43" selection-end-line="60" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
