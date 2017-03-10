@@ -67,7 +67,8 @@
         padding-top: 40rpx;
         vertical-align: top;
         width: 100rpx;
-        height: 100rpx; }
+        height: 100rpx;
+        margin-right: 10rpx; }
         .container .chat-box .inner .head image {
           border-radius: 50%;
           width: 100%;
@@ -102,19 +103,27 @@
           .container .chat-box .inner .ctx .name .user-name {
             display: inline-block;
             vertical-align: top;
-            height: 40rpx; }
+            height: 40rpx;
+            max-width: 200rpx;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
         .container .chat-box .inner .ctx .user-text {
           display: block;
           margin-top: 16.66667rpx;
-          margin-bottom: 20rpx; }
-          .container .chat-box .inner .ctx .user-text view {
+          margin-bottom: 20rpx;
+          max-width: 500rpx; }
+          .container .chat-box .inner .ctx .user-text > .inner-box {
             display: inline-block;
             box-sizing: border-box;
+            word-break: break-all;
             padding: 15rpx 25rpx;
             background: #2f8cff;
             font-size: 30rpx;
             border-radius: 20rpx;
             color: #fff; }
+            .container .chat-box .inner .ctx .user-text > .inner-box image {
+              max-width: 400rpx; }
         .container .chat-box .inner .ctx .like {
           display: block; }
           .container .chat-box .inner .ctx .like .icon {
@@ -135,7 +144,8 @@
             line-height: 40rpx;
             margin-left: 10rpx; }
       .container .chat-box .inner.right .head {
-        float: right; }
+        float: right;
+        margin-left: 10rpx; }
       .container .chat-box .inner.right .ctx {
         float: right; }
         .container .chat-box .inner.right .ctx .name {

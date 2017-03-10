@@ -80,12 +80,14 @@ $grey:#717171;
       $h:100rpx;
       margin-bottom: 30rpx;
       min-height:$h;
+      $headMargin:10rpx;
       .head{
         display: inline-block;
         padding-top: $atpt;
         vertical-align: top;
         width: $h;
         height:$h;
+        margin-right: $headMargin;
         image{
           border-radius: 50%;
           width:100%;
@@ -94,7 +96,7 @@ $grey:#717171;
       }
       .ctx{
         display: inline-block;
-        width:500rpx;;
+        width:500rpx;
         .name{
           display: block;
           vertical-align: bottom;
@@ -121,27 +123,36 @@ $grey:#717171;
               display: inline-block;
               vertical-align: top;
               color:#2f8cff;
-
             }
           }
           .user-name{
             display: inline-block;
             vertical-align: top;
             height:$atpt;
+            max-width: 200rpx;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
         }
         .user-text{
           display: block;
           margin-top: $h/6;
           margin-bottom: 20rpx;
-         view{
+          $maxW:500rpx;
+          max-width: $maxW;
+         >.inner-box{
            display: inline-block;
            box-sizing: border-box;
+           word-break: break-all;
            padding: 15rpx 25rpx;
            background:#2f8cff;
            font-size: 30rpx;
            border-radius:20rpx;
            color:#fff;
+           image{
+             max-width:400rpx;
+           }
          }
         }
         .like{
@@ -174,6 +185,7 @@ $grey:#717171;
       &.right{
         .head{
           float:right;
+          margin-left: $headMargin;
         }
         .ctx{
           float:right;

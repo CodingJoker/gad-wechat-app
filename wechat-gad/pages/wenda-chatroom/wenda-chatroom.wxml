@@ -1,5 +1,5 @@
 <view class="container">
-    <scroll-view  style="height: 90vh;" scroll-y="true">
+    <scroll-view  style="height: 90vh;" scroll-y="true" scroll-into-view="{{toView}}">
         <view class="room-info bob">
             <view class="attavr">
                 <image src="http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"></image>
@@ -14,170 +14,35 @@
                 我是 Suji Yan ；程序员 & 独立记者，日本スジテク（ Suji Tech ）的社长 & CEO。本科就读于美国 CS/ECE Top5 的 University ofIllinois
             </view>
         </view>
+        <view class="loading" hidden="{{loadStatus}}">加载中...</view>
         <view class="chat-box">
-            <view class="loading">加载中...</view>
-            <view class="time">12月29日 16:31</view>
-            <view class="inner">
+            <view wx:for="{{messageList}}" wx:key="{{item.index}}" class="inner {{item.role_type != 1 ? 'right':''}}"  id="msg{{messageList.length - index}}">
+                <view class="time">{{item.created_at}}</view>
                 <view class="head">
-                    <image src="http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"></image>
+                    <image src="{{item.user_pic ? item.user_pic : 'http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0'}}"></image>
                 </view>
                 <view class="ctx">
                     <view class="name">
-                        <view class="user-role" wx:if="false">
+                        <view class="user-role" wx:if="{{item.role_type == 2}}">
                             <view class="icon admin"></view>
                             <view class="role-name">管理员</view>
                         </view>
                         <view class="user-name">
-                            用户姓名
+                            {{item.username}}
                         </view>
                     </view>
                     <view class="user-text">
-                       <view>
-                           这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息
-                       </view>
+                        <view class="inner-box">
+                            <text wx:if="{{item.type == 1}}">{{item.detail}}</text>
+                            <image wx:if="{{item.type == 2}}" src="{{item.detail}}"></image>
+                            <view class="audio" wx:if="{{item.type == 3}}"  data-id="{{index}}">
+                                <audio src="{{item.src}}" id="audio{{index}}" controls></audio>
+                            </view>
+                        </view>
+
                     </view>
                     <view class="like">
-                        <view class="icon"></view>
-                        <view class="text ">
-                            双击气泡喜欢
-                        </view>
-                    </view>
-                </view>
-            </view>
-            <view class="time">12月29日 16:31</view>
-            <view class="inner right">
-                <view class="head">
-                    <image src="http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"></image>
-                </view>
-                <view class="ctx">
-                    <view class="name">
-                        <view class="user-role" wx:if="false">
-                            <view class="icon admin"></view>
-                            <view class="role-name">管理员</view>
-                        </view>
-                        <view class="user-name">
-                            用户姓名
-                        </view>
-                    </view>
-                    <view class="user-text">
-                        <view>
-                            这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息
-                        </view>
-                    </view>
-                    <view class="like">
-                        <view class="icon"></view>
-                        <view class="text ">
-                            双击气泡喜欢
-                        </view>
-                    </view>
-                </view>
-            </view>
-            <view class="time">12月29日 16:31</view>
-            <view class="inner">
-                <view class="head">
-                    <image src="http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"></image>
-                </view>
-                <view class="ctx">
-                    <view class="name">
-                        <view class="user-role" wx:if="false">
-                            <view class="icon admin"></view>
-                            <view class="role-name">管理员</view>
-                        </view>
-                        <view class="user-name">
-                            用户姓名
-                        </view>
-                    </view>
-                    <view class="user-text">
-                        <view>
-                            这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息
-                        </view>
-                    </view>
-                    <view class="like">
-                        <view class="icon"></view>
-                        <view class="text ">
-                            双击气泡喜欢
-                        </view>
-                    </view>
-                </view>
-            </view>
-            <view class="time">12月29日 16:31</view>
-            <view class="inner right">
-                <view class="head">
-                    <image src="http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"></image>
-                </view>
-                <view class="ctx">
-                    <view class="name">
-                        <view class="user-role" wx:if="false">
-                            <view class="icon admin"></view>
-                            <view class="role-name">管理员</view>
-                        </view>
-                        <view class="user-name">
-                            用户姓名
-                        </view>
-                    </view>
-                    <view class="user-text">
-                        <view>
-                            这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息
-                        </view>
-                    </view>
-                    <view class="like">
-                        <view class="icon"></view>
-                        <view class="text ">
-                            双击气泡喜欢
-                        </view>
-                    </view>
-                </view>
-            </view>
-            <view class="time">12月29日 16:31</view>
-            <view class="inner">
-                <view class="head">
-                    <image src="http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"></image>
-                </view>
-                <view class="ctx">
-                    <view class="name">
-                        <view class="user-role" wx:if="false">
-                            <view class="icon admin"></view>
-                            <view class="role-name">管理员</view>
-                        </view>
-                        <view class="user-name">
-                            用户姓名
-                        </view>
-                    </view>
-                    <view class="user-text">
-                        <view>
-                            这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息
-                        </view>
-                    </view>
-                    <view class="like">
-                        <view class="icon"></view>
-                        <view class="text ">
-                            双击气泡喜欢
-                        </view>
-                    </view>
-                </view>
-            </view>
-            <view class="time right">12月29日 16:31</view>
-            <view class="inner">
-                <view class="head">
-                    <image src="http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"></image>
-                </view>
-                <view class="ctx">
-                    <view class="name">
-                        <view class="user-role" wx:if="false">
-                            <view class="icon admin"></view>
-                            <view class="role-name">管理员</view>
-                        </view>
-                        <view class="user-name">
-                            用户姓名
-                        </view>
-                    </view>
-                    <view class="user-text">
-                        <view>
-                            这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息这里是消息
-                        </view>
-                    </view>
-                    <view class="like">
-                        <view class="icon"></view>
+                        <view class="icon {{item.is_liked ? 'liked' : ''}}"></view>
                         <view class="text ">
                             双击气泡喜欢
                         </view>
@@ -189,8 +54,8 @@
     <view class="input-box">
         <textarea placeholder="请输入内容" focus="true" fixed="true"  type="text" />
     </view>
-    <view class="more-msg">
+    <view class="more-msg" hidden="{{isMessageEnd}}" bindtap="moreMessage">
         <view class="icon"></view>
-        <view class="msg">100条新消息</view>
+        <view class="msg">{{leftMessageNum}}条新消息</view>
     </view>
 </view>

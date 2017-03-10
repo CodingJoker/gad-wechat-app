@@ -1,5 +1,5 @@
 var app =  getApp();
-var config = require('../../config.js');
+var config = require('../../config');
 Page({
     onLoad: function(option){
         var topic;
