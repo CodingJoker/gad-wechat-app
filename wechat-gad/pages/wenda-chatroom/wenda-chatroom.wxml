@@ -14,7 +14,7 @@
                 我是 Suji Yan ；程序员 & 独立记者，日本スジテク（ Suji Tech ）的社长 & CEO。本科就读于美国 CS/ECE Top5 的 University ofIllinois
             </view>
         </view>
-        <view class="loading" hidden="{{loadStatus}}">加载中...</view>
+        <view  hidden="{{loadStatus}}" class="loading">加载中...</view>
         <view class="chat-box">
             <view wx:for="{{messageList}}" wx:key="{{item.index}}" class="inner {{item.role_type != 1 ? 'right':''}}"  id="msg{{messageList.length - index}}">
                 <view class="time">{{item.created_at}}</view>
@@ -35,24 +35,25 @@
                         <view class="inner-box">
                             <text wx:if="{{item.type == 1}}">{{item.detail}}</text>
                             <image wx:if="{{item.type == 2}}" src="{{item.detail}}"></image>
-                            <view class="audio" wx:if="{{item.type == 3}}"  data-id="{{index}}">
-                                <audio src="{{item.src}}" id="audio{{index}}" controls></audio>
+                            <view class="audio" wx:if="{{item.type == 3}}"  data-id="{{index}}"  bindtap="toggleVoice">
+                                <text>7''</text>
+                                <audio id="audio{{index}}" src="{{item.detail}}" controls></audio>
                             </view>
                         </view>
-
                     </view>
                     <view class="like">
-                        <view class="icon {{item.is_liked ? 'liked' : ''}}"></view>
+                        <view class="icon {{item.is_liked ? 'liked' : ''}}" bindtap="like" data-index="{{index}}"></view>
                         <view class="text ">
-                            双击气泡喜欢
+                           {{item.like_count ? item.like_count + ' 人喜欢': ' 点击气泡喜欢'}}
                         </view>
                     </view>
                 </view>
             </view>
+
         </view>
     </scroll-view>
     <view class="input-box">
-        <textarea placeholder="请输入内容" focus="true" fixed="true"  type="text" />
+        <input class="input" value="{{clearUserInput}}" placeholder="请输入内容" fixed="true"  type="text"  bindconfirm="sendMessage" />
     </view>
     <view class="more-msg" hidden="{{isMessageEnd}}" bindtap="moreMessage">
         <view class="icon"></view>

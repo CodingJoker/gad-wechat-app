@@ -38,17 +38,16 @@
       display: block;
       font-size: 30rpx;
       color: #717171; }
+  .container .loading {
+    text-align: center;
+    height: 30rpx;
+    font-size: 25rpx;
+    background-color: #FFFFFF;
+    padding-bottom: 20rpx;
+    color: #c9c9c9; }
   .container .chat-box {
     display: block;
     margin-top: 20rpx; }
-    .container .chat-box .loading {
-      display: block;
-      text-align: center;
-      height: 30rpx;
-      font-size: 25rpx;
-      background-color: #FFFFFF;
-      padding-bottom: 20rpx;
-      color: #c9c9c9; }
     .container .chat-box .time {
       display: block;
       text-align: center;
@@ -109,12 +108,15 @@
             overflow: hidden;
             text-overflow: ellipsis; }
         .container .chat-box .inner .ctx .user-text {
+          position: relative;
           display: block;
           margin-top: 16.66667rpx;
           margin-bottom: 20rpx;
-          max-width: 500rpx; }
+          max-width: 500rpx;
+          height: auto; }
           .container .chat-box .inner .ctx .user-text > .inner-box {
             display: inline-block;
+            max-width: 450rpx;
             box-sizing: border-box;
             word-break: break-all;
             padding: 15rpx 25rpx;
@@ -124,6 +126,16 @@
             color: #fff; }
             .container .chat-box .inner .ctx .user-text > .inner-box image {
               max-width: 400rpx; }
+            .container .chat-box .inner .ctx .user-text > .inner-box .audio {
+              width: 200rpx;
+              height: 40rpx;
+              line-height: 40rpx;
+              text-align: right;
+              font-size: 30rpx;
+              background: url("../../statics/image/voice.png") no-repeat 0 0;
+              background-size: 40rpx; }
+              .container .chat-box .inner .ctx .user-text > .inner-box .audio audio {
+                display: none; }
         .container .chat-box .inner .ctx .like {
           display: block; }
           .container .chat-box .inner .ctx .like .icon {
@@ -151,7 +163,7 @@
         .container .chat-box .inner.right .ctx .name {
           display: block;
           text-align: right; }
-        .container .chat-box .inner.right .ctx .user-text view {
+        .container .chat-box .inner.right .ctx .user-text > .inner-box {
           float: right;
           display: inline-block;
           box-sizing: border-box;
@@ -159,13 +171,21 @@
           background: #ebebeb;
           font-size: 30rpx;
           border-radius: 20rpx;
-          color: #333333; }
+          color: #333333;
+          vertical-align: middle; }
         .container .chat-box .inner.right .ctx .user-text:after {
           content: ' ';
           display: block;
           width: 0;
           height: 0;
           clear: both; }
+        .container .chat-box .inner.right .ctx .user-text > .status {
+          display: inline-block;
+          float: right;
+          width: 50rpx;
+          height: 70rpx;
+          background-color: #000;
+          vertical-align: bottom; }
         .container .chat-box .inner.right .ctx .like {
           text-align: right; }
       .container .chat-box .inner:after {
@@ -180,23 +200,36 @@
     left: 0;
     display: block;
     height: 10vh;
+    width: 100%;
     background-color: #fff; }
     .container .input-box .choose-img {
       display: inline-block;
       width: 100rpx;
       height: 100%;
       border-radius: 50rpx; }
-    .container .input-box textarea {
+    .container .input-box .input {
       display: block;
+      width: 695rpx;
       height: 1rem;
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
-      width: 695rpx;
       padding-left: 15rpx;
       margin-left: 20rpx;
       margin-top: 3%;
       border: 1px solid #ccc;
       border-radius: 15rpx; }
+    .container .input-box .submit {
+      display: inline-block;
+      vertical-align: top;
+      width: 100rpx;
+      border: 1px solid #ccc;
+      border-radius: 15rpx;
+      height: 1.5rem;
+      margin-top: 3%;
+      padding-top: 0.5rem;
+      background: #2f8cff;
+      color: #fff;
+      text-align: center; }
   .container .more-msg {
     box-sizing: border-box;
     padding: 0 15rpx;

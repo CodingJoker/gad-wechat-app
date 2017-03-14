@@ -1,0 +1,52 @@
+{
+  "apps": [
+    {
+      "name": "live-1",
+      "script": "./app.js",
+      "watch": false,
+      "env": {
+        "NODE_ENV": "development",
+        "PORT": 8801
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    },
+    {
+      "name": "live-2",
+      "script": "./app.js",
+      "watch": false,
+      "env": {
+        "NODE_ENV": "development",
+        "PORT": 8802
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    },
+    {
+      "name": "live-3",
+      "script": "./app.js",
+      "watch": false,
+      "env": {
+        "NODE_ENV": "development",
+        "PORT": 8803
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    },
+    {
+      "name": "live-4",
+      "script": "./app.js",
+      "watch": false,
+      "env": {
+        "NODE_ENV": "development",
+        "PORT": 8804
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}

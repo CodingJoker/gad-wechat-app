@@ -14,6 +14,7 @@ var
   ,rename = require('gulp-rename')
   ,glob = require('glob')
   ,exec = require('gulp-exec')
+  ,nodemon = require('gulp-nodemon')
 ;
 
 //目录配置
@@ -133,7 +134,34 @@ gulp.task('mock',function (cb) {
       console.log(stdout);
       console.log(stderr);
   });
-})
+});
+
+//websocket server
+gulp.task('ws', function () {
+    var stream = nodemon({
+        script: './socket-server/app.js'
+        , ext: 'js'
+        , ignore: [
+                'mockserver/'
+                ,'node_modules/'
+                ,'page-scss/'
+                ,'wechat-gad/'
+            ]
+        , watch: ['./socket-server/']
+        , env: { 'NODE_ENV': 'development' }
+    });
+    
+
+    stream.on('restart', function () {
+            console.log('Restarted!')
+        })
+        .on('crash', function() {
+            console.error('Application has crashed!\n')
+            stream.emit('restart', 5)  // restart the server in 10 seconds
+        })
+});
+
+
 
 function isDirExit(name){
 

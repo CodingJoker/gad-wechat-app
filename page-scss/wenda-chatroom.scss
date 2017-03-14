@@ -52,19 +52,18 @@ $grey:#717171;
     }
   }
 
+  .loading{
+    text-align: center;
+    height:30rpx;
+    font-size: 25rpx;
+    background-color: #FFFFFF;
+    padding-bottom: 20rpx;
+    color: #c9c9c9;
+  }
   .chat-box{
     display: block;
     margin-top: 20rpx;
     $atpt:40rpx;
-    .loading{
-      display: block;
-      text-align: center;
-      height:30rpx;
-      font-size: 25rpx;
-      background-color: #FFFFFF;
-      padding-bottom: 20rpx;
-      color: #c9c9c9;
-    }
     .time{
       display: block;
       text-align: center;
@@ -136,13 +135,17 @@ $grey:#717171;
           }
         }
         .user-text{
+          position: relative;
           display: block;
           margin-top: $h/6;
           margin-bottom: 20rpx;
           $maxW:500rpx;
           max-width: $maxW;
+          height:auto;
+          $statusW:50rpx;
          >.inner-box{
            display: inline-block;
+           max-width:$maxW - $statusW ;
            box-sizing: border-box;
            word-break: break-all;
            padding: 15rpx 25rpx;
@@ -152,6 +155,19 @@ $grey:#717171;
            color:#fff;
            image{
              max-width:400rpx;
+           }
+           .audio{
+             $h:40rpx;
+             width: 200rpx;
+             height:$h;
+             line-height:$h;
+             text-align: right;
+             font-size: 30rpx;
+             background: url('../../statics/image/voice.png') no-repeat 0 0;
+             background-size: $h;
+             audio{
+               display: none;
+             }
            }
          }
         }
@@ -194,7 +210,8 @@ $grey:#717171;
             text-align: right;
           }
           .user-text{
-            view{
+            $statusW:50rpx;
+            >.inner-box{
               float: right;
               display: inline-block;
               box-sizing: border-box;
@@ -203,6 +220,7 @@ $grey:#717171;
               font-size: 30rpx;
               border-radius:20rpx;
               color:#333333;
+              vertical-align: middle;
             }
             &:after{
               content: ' ';
@@ -210,6 +228,14 @@ $grey:#717171;
               width:0;
               height:0;
               clear:both;
+            }
+            >.status{
+              display: inline-block;
+              float: right;
+              width: $statusW;
+              height:70rpx;
+              background-color: #000;
+              vertical-align: bottom;
             }
           }
           .like{
@@ -233,6 +259,7 @@ $grey:#717171;
     left:0;
     display: block;
     height:10vh;
+    width:100%;
     $w:100rpx;
     background-color: #fff;
     .choose-img{
@@ -241,19 +268,37 @@ $grey:#717171;
       height:100%;
       border-radius: $w / 2;
     }
-    textarea{
-      display: block;
+    .input{
+
       $mplr:20rpx;
       $pl:15rpx;
+      display: block;
+      width: 750rpx - 2*$mplr - $pl;
+
+      //display: inline-block;
+      //width:600rpx;
+
       height:1rem;
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
-      width: 750rpx - 2*$mplr - $pl;
       padding-left: $pl;
       margin-left: $mplr;
       margin-top:3%;
       border: 1px solid #ccc;
       border-radius: 15rpx;
+    }
+    .submit{
+      display: inline-block;
+      vertical-align: top;
+      width:100rpx;
+      border: 1px solid #ccc;
+      border-radius: 15rpx;
+      height:1.5rem;
+      margin-top:3%;
+      padding-top: 0.5rem;
+      background: #2f8cff;
+      color:#fff;
+      text-align: center;
     }
   }
   .more-msg{
