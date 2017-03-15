@@ -1,12 +1,13 @@
 {
   "pages":[
-    "pages/wenda-chatroom/wenda-chatroom",
+    "pages/timeline/timeline",
+    "pages/self/self",
     "pages/wenda/wenda",
     "pages/index/index",
     "pages/video/video",
-    "pages/self/self",
     "pages/logs/logs",
-    "pages/wenda-detail/wenda-detail"
+    "pages/wenda-detail/wenda-detail",
+    "pages/wenda-chatroom/wenda-chatroom"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -36,7 +37,7 @@
       "pagePath": "pages/self/self",
       "iconPath": "statics/image/tab/user-uf.png",
       "selectedIconPath": "statics/image/tab/user.png",
-      "text": "自己"
+      "text": "我的"
     }
     ,{
       "pagePath": "pages/logs/logs",

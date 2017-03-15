@@ -1,0 +1,129 @@
+$grey:#717171;
+.self-ct{
+  width:100vw;
+  height:100vh;
+  margin: 0;
+  padding:0;
+  font-family: 'KaiTi';
+  background-color: #EBEBEB;
+  .head-ct{
+    display: block;
+    $headcth:300rpx;
+    height:$headcth;
+    background: url('../../statics/image/self-bg.jpg') no-repeat 0 65%;
+    background-size: 100%;
+    color:#fff;
+    .inner{
+      background-color: rgba(0,0,0,0.4);
+      height:100%;
+      $atw:200rpx;
+      $imgw:160rpx;
+      .attavr{
+        display: inline-block;
+        height:100%;
+        width: $atw;
+        position: relative;
+        image{
+          position: absolute;
+          left: 50%;
+          top:50%;
+          transform: translate(-50%,-60%);
+          border-radius: $imgw / 2;
+          width:$imgw;
+          height:$imgw;
+        }
+      }
+      .intro{
+        display: inline-block;
+        width:750rpx - $atw;
+        height:100%;
+        vertical-align: top;
+        .top{
+          display: block;
+          box-sizing: border-box;
+          vertical-align: top;
+          border-bottom:1rpx solid rgba(189,187,179,0.43);
+          padding-top: ($headcth - $atw) /2;
+
+          padding-bottom: 30rpx;
+
+          .name{
+            display: block;
+            font-size: 40rpx;
+            &.female{
+              &:after{
+                background:url('../../statics/image/female.png') no-repeat 0 0 ;
+                background-size: 100%;
+              }
+            }
+            &:after{
+              content:'';
+              display: inline-block;
+              margin-left: 15rpx;
+              $rolew:30rpx;
+              width: $rolew;
+              height:$rolew;
+              background:url('../../statics/image/male.png') no-repeat 0 0 ;
+              background-size: 100%;
+            }
+          }
+          .id{
+            display: inline-block;
+            font-size:30rpx;
+          }
+          .self-page{
+            display: inline-block;
+            float: right;
+            font-size:30rpx;
+            margin-right: 10rpx;
+            &:after{
+              content:" ";
+              display: inline-block;
+              width:0;
+              height:0;
+              clear:both;
+            }
+          }
+        }
+        .bottom{
+          box-sizing: border-box;
+          padding-top: 30rpx;
+          view{
+            display: inline-block;
+            font-size: 35rpx;
+            .count{
+              display: inline-block;
+              margin-left: 10rpx;
+              font-size: 34rpx;
+              vertical-align: top;
+            }
+          }
+          .watch{
+            margin-right: 30rpx;
+          }
+        }
+      }
+    }
+  }
+  .bt{
+    >view{
+      display: block;
+      margin-top: 20rpx;
+      background-color: #fff;
+      padding: 20rpx 20rpx;
+      font-family: 40rpx;
+      position: relative;
+        &:after{
+          display: inline-block;
+          position: absolute;
+          right:10rpx;
+          top:0rpx;
+          content:" ";
+          width:50rpx;
+          height:100%;
+          background: url('../../statics/image/forward.png') no-repeat 0 40%;
+          background-size: 80%;
+        }
+    }
+  }
+}

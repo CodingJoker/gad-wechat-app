@@ -1,0 +1,103 @@
+.tm-ct {
+  font-family: 'KaiTi';
+  width: 100vw;
+  height: 100vh; }
+  .tm-ct .head {
+    display: block;
+    height: 500rpx;
+    background: url("../../statics/image/self-bg.jpg") no-repeat 0 65%;
+    background-size: 100%; }
+    .tm-ct .head .inner {
+      background-color: rgba(0, 0, 0, 0.4);
+      position: relative;
+      height: 100%; }
+      .tm-ct .head .inner .attavr {
+        display: inline-block;
+        height: 100%;
+        width: 200rpx;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform-origin: 50% 50%;
+        transform: translate(-50%, -10%); }
+        .tm-ct .head .inner .attavr image {
+          border-radius: 80rpx;
+          width: 160rpx;
+          height: 160rpx; }
+  .tm-ct .intro {
+    display: block;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 20rpx; }
+    .tm-ct .intro .top .left {
+      display: block;
+      text-align: center; }
+      .tm-ct .intro .top .left .name {
+        display: block;
+        color: #077;
+        font-size: 40rpx;
+        font-weight: 600; }
+        .tm-ct .intro .top .left .name.female:after {
+          background: #000 url("../../statics/image/female.png") no-repeat 0 0;
+          background-size: 100%; }
+        .tm-ct .intro .top .left .name:after {
+          content: ' ';
+          display: inline-block;
+          margin-left: 15rpx;
+          width: 30rpx;
+          height: 30rpx;
+          background: #000 url("../../statics/image/male.png") no-repeat 0 0;
+          background-size: 100%; }
+      .tm-ct .intro .top .left .location {
+        font-size: 30rpx;
+        color: #ccc; }
+    .tm-ct .intro .top .right {
+      display: inline-block;
+      float: right;
+      color: #32c24d;
+      box-sizing: border-box;
+      padding: 10rpx 20rpx;
+      border: 1px solid #32c24d;
+      vertical-align: bottom;
+      border-radius: 5rpx; }
+      .tm-ct .intro .top .right:after {
+        content: " ";
+        display: inline-block;
+        width: 0;
+        height: 0;
+        clear: both; }
+    .tm-ct .intro .bt {
+      display: block;
+      margin-top: 15rpx;
+      padding-top: 30rpx;
+      border-top: 2rpx solid rgba(189, 187, 179, 0.43);
+      position: relative; }
+      .tm-ct .intro .bt:after {
+        display: inline-block;
+        position: absolute;
+        right: 10rpx;
+        top: 0rpx;
+        content: " ";
+        width: 50rpx;
+        height: 100%;
+        background: url("../../statics/image/forward.png") no-repeat 0 90%;
+        background-size: 80%; }
+  .tm-ct .count-block {
+    background: #ebebeb;
+    box-sizing: border-box;
+    padding-top: 0rpx;
+    padding-bottom: 10rpx; }
+    .tm-ct .count-block .column {
+      display: block;
+      margin-top: 10rpx;
+      background-color: #fff;
+      text-align: center; }
+      .tm-ct .count-block .column .item {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 345rpx;
+        margin: 10rpx;
+        padding: 20rpx;
+        text-align: center; }
+        .tm-ct .count-block .column .item:first-child {
+          border-right: 5rpx solid #ebebeb; }

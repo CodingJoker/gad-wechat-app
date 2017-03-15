@@ -1,1 +1,28 @@
-<view>自己</view>
+<view class="self-ct">
+    <view class="head-ct">
+        <view class="inner">
+            <view class="attavr">
+                <image src="http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"></image>
+            </view>
+            <view class="intro">
+                <view class="top">
+                        <view class="name male">北方</view>
+                        <view class="id">ID:158698501</view>
+                        <view class="self-page">
+                            个人主页 >
+                        </view>
+                </view>
+                <view class="bottom">
+                    <view class="watch"><text>关注</text> <text class="count">1231</text></view>
+                    <view class="stars"><text>粉丝</text> <text class="count">234</text></view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="bt">
+        <view>收藏</view>
+        <view>文章</view>
+        <view>Live直播</view>
+    </view>
+
+</view>

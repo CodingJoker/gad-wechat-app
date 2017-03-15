@@ -1,0 +1,133 @@
+.tm-ct{
+  font-family: 'KaiTi';
+  width:100vw;
+  height:100vh;
+  //background-color: #EBEBEB;
+  .head{
+    display: block;
+    $headcth:500rpx;
+    height:$headcth;
+    background: url('../../statics/image/self-bg.jpg') no-repeat 0 65%;
+    background-size: 100%;
+    $atw:200rpx;
+    $imgw:160rpx;
+    .inner{
+      background-color: rgba(0,0,0,0.4);
+      position: relative;
+      height:100%;
+      .attavr{
+        display: inline-block;
+        height:100%;
+        width: $atw;
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform-origin: 50% 50%;
+        transform: translate(-50%,-10%);
+        image{
+          border-radius: $imgw / 2;
+          width:$imgw;
+          height:$imgw;
+        }
+      }
+    }
+  }
+  .intro{
+    display: block;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 20rpx;
+    .top{
+      .left{
+        display: block;
+        text-align: center;
+        .name{
+          display: block;
+          color:#077;
+          font-size: 40rpx;
+          font-weight: 600;
+          &.female{
+            &:after{
+              background:#000 url('../../statics/image/female.png') no-repeat 0 0 ;
+              background-size: 100%;
+            }
+          }
+          &:after{
+            content:' ';
+            display: inline-block;
+            margin-left: 15rpx;
+            $rolew:30rpx;
+            width: $rolew;
+            height:$rolew;
+            background:#000 url('../../statics/image/male.png') no-repeat 0 0 ;
+            background-size: 100%;
+          }
+        }
+        .location{
+          font-size: 30rpx;
+          color:#ccc;
+        }
+      }
+      .right{
+        display: inline-block;
+        float:right;
+        &:after{
+          content:" ";
+          display: inline-block;
+          width:0;
+          height:0;
+          clear:both;
+        }
+        $color:#32c24d;
+        color: $color;
+        box-sizing: border-box;
+        padding: 10rpx 20rpx;
+        border:1px solid $color;
+        vertical-align: bottom;
+        border-radius: 5rpx;
+      }
+    }
+    .bt{
+      display: block;
+      margin-top: 15rpx;
+      padding-top: 30rpx;
+      border-top: 2rpx solid rgba(189,187,179,0.43);
+      position: relative;
+      &:after{
+        display: inline-block;
+        position: absolute;
+        right:10rpx;
+        top:0rpx;
+        content:" ";
+        width:50rpx;
+        height:100%;
+        background: url('../../statics/image/forward.png') no-repeat 0 90%;
+        background-size: 80%;
+      }
+    }
+  }
+  .count-block{
+    background: #ebebeb;
+    box-sizing: border-box;
+    padding-top: 0rpx;
+
+    padding-bottom: 10rpx;
+    .column{
+      display: block;
+      margin-top: 10rpx;
+      background-color: #fff;
+      text-align: center;
+      .item{
+        display: inline-block;
+        box-sizing: border-box;
+        width:345rpx;
+        margin:10rpx;
+        padding: 20rpx;
+        text-align: center;
+        &:first-child{
+          border-right: 5rpx solid #ebebeb;
+        }
+      }
+    }
+  }
+}

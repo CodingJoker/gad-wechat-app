@@ -1,0 +1,41 @@
+<view class="tm-ct">
+    <view class="head">
+        <view class="inner">
+            <view class="attavr">
+                <image src="http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"></image>
+            </view>
+        </view>
+    </view>
+    <view class="intro">
+        <view class="top">
+           <view class="left">
+               <view class="name">北方</view>
+               <view class="location">成都</view>
+           </view>
+
+        </view>
+        <view class="bt">喜欢你渐渐成为了一种习惯</view>
+    </view>
+    <view class="count-block">
+        <view class="column">
+            <view class="item">
+                <view>1</view>
+                <view>广播</view>
+            </view>
+            <view class="item">
+                <view>1</view>
+                <view>日记</view>
+            </view>
+        </view>
+        <view class="column">
+            <view class="item">
+                <view>1</view>
+                <view>关注</view>
+            </view>
+            <view class="item">
+                <view>1</view>
+                <view>粉丝</view>
+            </view>
+        </view>
+    </view>
+</view>

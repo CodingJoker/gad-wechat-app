@@ -24,7 +24,7 @@ Page({
             UserId:151580,
             NickName:'Jumor',
             Avatar:'http://q1.qlogo.cn/g?b=qq&k=mqpGJpegXpKyWkSyMulYHw&s=100',
-            type:'1'
+            type:'3'
         },         //当前用户信息
         isStart: true,
         MESSAGE_LENGTH: 20,       //一次拉取消息的数量

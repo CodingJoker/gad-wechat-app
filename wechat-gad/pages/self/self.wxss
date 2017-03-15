@@ -1,0 +1,99 @@
+.self-ct {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'KaiTi';
+  background-color: #EBEBEB; }
+  .self-ct .head-ct {
+    display: block;
+    height: 300rpx;
+    background: url("../../statics/image/self-bg.jpg") no-repeat 0 65%;
+    background-size: 100%;
+    color: #fff; }
+    .self-ct .head-ct .inner {
+      background-color: rgba(0, 0, 0, 0.4);
+      height: 100%; }
+      .self-ct .head-ct .inner .attavr {
+        display: inline-block;
+        height: 100%;
+        width: 200rpx;
+        position: relative; }
+        .self-ct .head-ct .inner .attavr image {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -60%);
+          border-radius: 80rpx;
+          width: 160rpx;
+          height: 160rpx; }
+      .self-ct .head-ct .inner .intro {
+        display: inline-block;
+        width: 550rpx;
+        height: 100%;
+        vertical-align: top; }
+        .self-ct .head-ct .inner .intro .top {
+          display: block;
+          box-sizing: border-box;
+          vertical-align: top;
+          border-bottom: 1rpx solid rgba(189, 187, 179, 0.43);
+          padding-top: 50rpx;
+          padding-bottom: 30rpx; }
+          .self-ct .head-ct .inner .intro .top .name {
+            display: block;
+            font-size: 40rpx; }
+            .self-ct .head-ct .inner .intro .top .name.female:after {
+              background: url("../../statics/image/female.png") no-repeat 0 0;
+              background-size: 100%; }
+            .self-ct .head-ct .inner .intro .top .name:after {
+              content: '';
+              display: inline-block;
+              margin-left: 15rpx;
+              width: 30rpx;
+              height: 30rpx;
+              background: url("../../statics/image/male.png") no-repeat 0 0;
+              background-size: 100%; }
+          .self-ct .head-ct .inner .intro .top .id {
+            display: inline-block;
+            font-size: 30rpx; }
+          .self-ct .head-ct .inner .intro .top .self-page {
+            display: inline-block;
+            float: right;
+            font-size: 30rpx;
+            margin-right: 10rpx; }
+            .self-ct .head-ct .inner .intro .top .self-page:after {
+              content: " ";
+              display: inline-block;
+              width: 0;
+              height: 0;
+              clear: both; }
+        .self-ct .head-ct .inner .intro .bottom {
+          box-sizing: border-box;
+          padding-top: 30rpx; }
+          .self-ct .head-ct .inner .intro .bottom view {
+            display: inline-block;
+            font-size: 35rpx; }
+            .self-ct .head-ct .inner .intro .bottom view .count {
+              display: inline-block;
+              margin-left: 10rpx;
+              font-size: 34rpx;
+              vertical-align: top; }
+          .self-ct .head-ct .inner .intro .bottom .watch {
+            margin-right: 30rpx; }
+  .self-ct .bt > view {
+    display: block;
+    margin-top: 20rpx;
+    background-color: #fff;
+    padding: 20rpx 20rpx;
+    font-family: 40rpx;
+    position: relative; }
+    .self-ct .bt > view:after {
+      display: inline-block;
+      position: absolute;
+      right: 10rpx;
+      top: 0rpx;
+      content: " ";
+      width: 50rpx;
+      height: 100%;
+      background: url("../../statics/image/forward.png") no-repeat 0 40%;
+      background-size: 80%; }
