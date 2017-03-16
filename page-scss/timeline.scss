@@ -5,7 +5,7 @@
   //background-color: #EBEBEB;
   .head{
     display: block;
-    $headcth:500rpx;
+    $headcth:50%;
     height:$headcth;
     background: url('../../statics/image/self-bg.jpg') no-repeat 0 65%;
     background-size: 100%;
@@ -48,7 +48,7 @@
           font-weight: 600;
           &.female{
             &:after{
-              background:#000 url('../../statics/image/female.png') no-repeat 0 0 ;
+              background:url('../../statics/image/b-female.png') no-repeat 0 0 ;
               background-size: 100%;
             }
           }
@@ -59,7 +59,7 @@
             $rolew:30rpx;
             width: $rolew;
             height:$rolew;
-            background:#000 url('../../statics/image/male.png') no-repeat 0 0 ;
+            background:url('../../statics/image/b-male.png') no-repeat 0 0 ;
             background-size: 100%;
           }
         }

@@ -1,0 +1,42 @@
+.aclist-ct {
+  font-family: 'KaiTi';
+  width: 100vw;
+  height: 100vh; }
+  .aclist-ct .list-ct {
+    background-color: #ebebeb;
+    padding-bottom: 30rpx; }
+    .aclist-ct .list-ct .item {
+      background: #fff;
+      margin: 15rpx 0;
+      height: 200rpx; }
+      .aclist-ct .list-ct .item .left {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 200rpx;
+        height: 200rpx; }
+        .aclist-ct .list-ct .item .left image {
+          width: 100%;
+          height: 100%; }
+      .aclist-ct .list-ct .item .right {
+        display: inline-block;
+        height: 100%;
+        box-sizing: border-box;
+        vertical-align: top;
+        width: 550rpx;
+        padding: 15rpx;
+        color: #333333; }
+        .aclist-ct .list-ct .item .right .title {
+          display: block;
+          font-size: 35rpx;
+          height: 100rpx;
+          line-height: 50rpx; }
+        .aclist-ct .list-ct .item .right .bt {
+          height: 50%;
+          display: block;
+          font-size: 30rpx;
+          color: #bbbbbb; }
+          .aclist-ct .list-ct .item .right .bt > view {
+            display: inline-block;
+            width: 50%;
+            height: 100rpx;
+            line-height: 100rpx; }

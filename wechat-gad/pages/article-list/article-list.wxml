@@ -1,0 +1,76 @@
+<view class="aclist-ct">
+    <scroll-view class="list-ct" height="100vh" sroll-y="true">
+        <view class="item">
+            <view class="left">
+                <image src="http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"></image>
+            </view>
+            <view class="right">
+                <view class="title">这里是title这里是title这里是title这里是title</view>
+                <view class="bt">
+                    <view class="writer">作者姓名</view>
+                    <view class="时间">2017-3-15</view>
+                </view>
+            </view>
+        </view>
+        <view class="item">
+            <view class="left">
+                <image src="http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"></image>
+            </view>
+            <view class="right">
+                <view class="title">这里是title这里是title这里是title这里是title</view>
+                <view class="bt">
+                    <view class="writer">作者姓名</view>
+                    <view class="时间">2017-3-15</view>
+                </view>
+            </view>
+        </view>
+        <view class="item">
+            <view class="left">
+                <image src="http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"></image>
+            </view>
+            <view class="right">
+                <view class="title">这里是title这里是title这里是title这里是title</view>
+                <view class="bt">
+                    <view class="writer">作者姓名</view>
+                    <view class="时间">2017-3-15</view>
+                </view>
+            </view>
+        </view>
+        <view class="item">
+            <view class="left">
+                <image src="http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"></image>
+            </view>
+            <view class="right">
+                <view class="title">这里是title这里是title这里是title这里是title</view>
+                <view class="bt">
+                    <view class="writer">作者姓名</view>
+                    <view class="时间">2017-3-15</view>
+                </view>
+            </view>
+        </view>
+        <view class="item">
+            <view class="left">
+                <image src="http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"></image>
+            </view>
+            <view class="right">
+                <view class="title">这里是title这里是title这里是title这里是title</view>
+                <view class="bt">
+                    <view class="writer">作者姓名</view>
+                    <view class="时间">2017-3-15</view>
+                </view>
+            </view>
+        </view>
+        <view class="item">
+            <view class="left">
+                <image src="http://wx.qlogo.cn/mmopen/vi_32/K3vFfda4OibhtZD8dwOPxp8Wwta3AxIR6Wnq8h8NyIU5icxicdUbmfTUs9J4bm2JS9Ua0CTIEuTwHjuEXoNPNcawQ/0"></image>
+            </view>
+            <view class="right">
+                <view class="title">这里是title这里是title这里是title这里是title</view>
+                <view class="bt">
+                    <view class="writer">作者姓名</view>
+                    <view class="时间">2017-3-15</view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

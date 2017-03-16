@@ -8,7 +8,7 @@
                 <view class="top">
                         <view class="name male">北方</view>
                         <view class="id">ID:158698501</view>
-                        <view class="self-page">
+                        <view class="self-page" bindtap="toTimeLine">
                             个人主页 >
                         </view>
                 </view>
@@ -20,9 +20,9 @@
         </view>
     </view>
     <view class="bt">
-        <view>收藏</view>
-        <view>文章</view>
-        <view>Live直播</view>
+        <view bindtap="toCollect">收藏</view>
+        <view bindtap="toArticle">文章</view>
+        <view bindtap="toLive">Live直播</view>
     </view>
 
 </view>

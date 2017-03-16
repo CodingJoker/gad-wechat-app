@@ -1,13 +1,14 @@
 {
   "pages":[
-    "pages/timeline/timeline",
     "pages/self/self",
     "pages/wenda/wenda",
     "pages/index/index",
     "pages/video/video",
     "pages/logs/logs",
     "pages/wenda-detail/wenda-detail",
-    "pages/wenda-chatroom/wenda-chatroom"
+    "pages/article-list/article-list",
+    "pages/wenda-chatroom/wenda-chatroom",
+    "pages/timeline/timeline"
   ],
   "window":{
     "backgroundTextStyle":"light",

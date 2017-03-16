@@ -4,7 +4,7 @@
   height: 100vh; }
   .tm-ct .head {
     display: block;
-    height: 500rpx;
+    height: 50%;
     background: url("../../statics/image/self-bg.jpg") no-repeat 0 65%;
     background-size: 100%; }
     .tm-ct .head .inner {
@@ -38,7 +38,7 @@
         font-size: 40rpx;
         font-weight: 600; }
         .tm-ct .intro .top .left .name.female:after {
-          background: #000 url("../../statics/image/female.png") no-repeat 0 0;
+          background: url("../../statics/image/b-female.png") no-repeat 0 0;
           background-size: 100%; }
         .tm-ct .intro .top .left .name:after {
           content: ' ';
@@ -46,7 +46,7 @@
           margin-left: 15rpx;
           width: 30rpx;
           height: 30rpx;
-          background: #000 url("../../statics/image/male.png") no-repeat 0 0;
+          background: url("../../statics/image/b-male.png") no-repeat 0 0;
           background-size: 100%; }
       .tm-ct .intro .top .left .location {
         font-size: 30rpx;

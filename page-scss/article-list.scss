@@ -1,0 +1,52 @@
+.aclist-ct{
+  font-family: 'KaiTi';
+  width: 100vw;
+  height:100vh;
+  .list-ct{
+    background-color: #ebebeb;
+    padding-bottom: 30rpx;
+    .item{
+      background: #fff;
+      margin: 15rpx 0;
+      height:200rpx;
+      $left:200rpx;
+      .left{
+        display: inline-block;
+        box-sizing: border-box;
+        width:$left;
+        height:$left;;
+        image{
+          width:100%;
+          height:100%;
+        }
+      }
+      .right{
+        display: inline-block;
+        height:100%;
+        box-sizing: border-box;
+        vertical-align: top;
+        width: 750rpx - $left;
+        padding:15rpx;
+        color:#333333;
+        .title{
+          display: block;
+          font-size: 35rpx;
+          height:$left / 2;
+          line-height: $left / 4 ;
+        }
+        .bt{
+          height:50%;
+          display: block;
+          font-size: 30rpx;
+          color:#bbbbbb;
+          >view{
+            display: inline-block;
+            width:50%;
+            height:$left / 2;
+            line-height: $left / 2 ;
+          }
+        }
+      }
+    }
+  }
+}
